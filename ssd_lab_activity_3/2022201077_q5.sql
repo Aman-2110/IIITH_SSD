@@ -1,0 +1,2 @@
+USE COMPANY;
+select tab.dpn , tab.num , d.DNumber from DEPARTMENT d join (select dp.essn as dpn, count(*) as num from DEPENDENT dp  where dp.essn in (select mgr_ssn from DEPARTMENT where Dnumber in (select Dnumber from DEPT_LOCATIONS group by Dnumber having count(*) >= 2)) group by dp.essn) as tab on d.mgr_ssn = tab.dpn;
