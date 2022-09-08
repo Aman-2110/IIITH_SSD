@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Site Title</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script>
+          function switchPage() {
+            return true;
+          }
+        </script>
+    </head>
+<body>
+    <h1>Welcome to SSD LAB</h1>
+    <div>
+       <form onsubmit = "return switchPage()" method = "GET" action = "./studentRecords.html">
+        <label for="fname" class>Username</label><br>
+        <input type="text" id="fname"><br>
+        <label for="pass">Password</label><br>
+        <input type="password" id="pass"><br><br>
+        <input type="submit" value="Login">
+    </form>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-attachment : fixed;
+    display : grid;
+    align-items : center;
+    justify-content : center;
+    background-image: linear-gradient(#4f71d6, #9cabd9);
+  }
+  
+  h1 {
+    text-align : center
+  }
+  
+  table, th, td {
+    border : 1px solid black;
+    border-collapse: collapse;
+    padding : 5px 50px;
+  }
+  
+  tr:nth-child(even){
+    background : #07e7f2;
+    
+  }
+  
+  
+  div {
+    width : fit-content; 
+    margin : 5% auto;
+    background : #ffffff;
+    padding : 10px;
+    border-radius : 5px;
+    box-shadow : 5px 5px; 
+  }
+  
+  button {
+    margin : auto;
+    padding : 10px;
+    background : #ff0000;
+  }

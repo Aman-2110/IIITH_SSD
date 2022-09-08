@@ -1,0 +1,23 @@
+body {
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-attachment : fixed;
+    display : grid;
+    align-items : center;
+    background-image: linear-gradient(#5d688c, #9cabd9);
+  }
+  
+  h1 {
+    text-align : center
+  }
+  
+  div {
+    width : fit-content; 
+    margin : 5% auto;
+    background : #ffffff;
+    padding : 20px;
+    border-radius : 5px;
+    box-shadow : 5px 5px; 
+  }
+  
+  
