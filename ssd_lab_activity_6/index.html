@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 6</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+<body>
+    <h1>Team Form</h1>
+    <div>
+    <form onsubmit = "return showPrompt()">
+        <table>
+            <tr>
+                <th>
+                    <label for="managerName">Manager Name</label>
+                </th>
+                <td>
+                    <input type="text" id = "managerName"  required>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="groupEmail" >Group Email</label>
+                </th>
+                <td>
+                    <input type="email" id = "groupEmail"  required>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="serverUsername">Server UserName</label>
+                </th>
+                <td>
+                    <input type="text" id = "serverUsername"  onkeyup='checkUsername();' required >
+                </td>
+                <td>
+                    <span id='messageUsername'></span>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="serverPassword">Server Password</label>
+                </th>
+                <td>
+                    <input type="password" id = "serverPassword" required onkeyup='check();'>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="confirmPassword">Confirm Password</label>
+                </th>
+                <td>
+                    <input type="password" id = "confirmPassword"  required onkeyup='check();'>
+                </td>
+                <td>
+                    <span id='message'></span>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="teamLead">Team Lead</label>
+                </th>
+                <td>
+                    <select id="teamLead" name="DropDown"  required>
+                        <option value="Aman">Aman</option>
+                        <option value="Aaron">Aaron</option>
+                        <option value="Aarush">Aarush</option>
+                        <option value="Ayaan">Ayaan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="members" name="members">Team Members</label><br>
+                </th>
+                <td>
+                    <div class="droptarget" ondragover="doHandler(event)" ondrop="dpHandler(event)">
+                        <p id="dragtarget1" ondragstart="dsHandler(event)" draggable="true">Aman</p>
+                        <p id="dragtarget2" ondragstart="dsHandler(event)" draggable="true">Aaron</p>
+                        <p id="dragtarget3" ondragstart="dsHandler(event)" draggable="true">Aarush</p>
+                        <p id="dragtarget4" ondragstart="dsHandler(event)" draggable="true">Ayaan</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="droptarget forpromp" ondragover="doHandler(event)" ondrop="dpHandler(event)"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>                
+            </tr>
+    </table>
+    </form>
+    </div>
+    
+
+</body>
+<script src = "./script.js"> </script>
+</html>

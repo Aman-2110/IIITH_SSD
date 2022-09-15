@@ -1,0 +1,22 @@
+.droptarget {
+    float: left;
+    width: 100px;
+    height: 150px;
+    padding: 5px 8px;
+    border: 1px solid #aaaaaa;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+table , td {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
