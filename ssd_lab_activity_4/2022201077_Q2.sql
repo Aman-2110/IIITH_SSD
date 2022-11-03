@@ -1,4 +1,4 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `getCustomerAndGrade`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SelectCustomers`(IN City varchar(35))
 BEGIN
-	select CUST_NAME, GRADE from customer where OPENING_AMT + RECEIVE_AMT > 10000;
+SELECT CUST_NAME FROM customer WHERE WORKING_AREA = City;
 END
