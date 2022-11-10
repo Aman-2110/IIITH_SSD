@@ -1,11 +1,20 @@
-SSD LAB ACTIVITY : 13
-Roll No : 2022201077
+SSD Lab activity 12
+Roll no. : 2022201077
 
-Files : 
-1.server.py
-2.signup.html in templates folder
-3.login.html in templates folder
+for Q1
+    Run : Python3 index.py
+    for 42x25 matrix
+    code auto detects noise in data provided and ignore it
+    1st line of output contains stride length
+    2nd line of output contains stride velocity
+    3rd line of output contains cadence
+    No assumptions made
 
-Run Command : python3 server.py
-
-Created flask application for login and signup
+for Q2 
+    Run : Python3 index2.py
+    for 126x25 matrix
+    code auto detects noise in data provided and ignore it
+    1st line of output contains stride length
+    2nd line of output contains stride velocity
+    3rd line of output contains cadence
+    No assumptions made
